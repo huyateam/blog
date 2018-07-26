@@ -2,8 +2,8 @@
   <li class="post-copyright-author">
     <strong>{{ __('post.copyright.author') + __('symbol.colon') }}</strong>
     {% if (post.author) %}
-      {% if (post.ahthorpage) %}
-      <a target=_blank href="{{ post.ahthorpage }}" title="{{ post.author }}">{{ post.author }}</a>
+      {% if (post.authorpage) %}
+      <a target=_blank href="{{ post.authorpage }}" title="{{ post.author }}">{{ post.author }}</a>
       {% else %}
       <a href="{{ url_for('/tags/' + post.author) }}">{{ post.author }}</a>
       {% endif %}
